@@ -1,0 +1,52 @@
+.header__menu {
+  position: relative;
+  width: 80%;
+  background: #000; /* メニューの背景色 */
+  text-align: center;
+  list-style: none;
+  padding: 0;
+}
+.header__menu li {
+  display: inline-block;
+  padding: 1em 5em;
+}
+
+.header__menu li a {
+  color: #fff; /* メニューの文字色 */
+  text-decoration: none;
+}
+
+.header__menu li a:hover {
+  color: ##48ff00; /* ホバーした時の文字色 */
+  border-bottom: 2px solid #48ff0; /* 下線 なしにする場合は削除する*/
+}
+
+ul.mega__menu-second {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.header__menu li:hover {
+  background: #570f76; /* メニューの背景色 */
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+li.mega__menu ul.mega__menu-second {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  background: #48ff00; /* メガメニューの背景色 */
+  padding: 20px;
+  box-sizing: border-box;
+
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+}
+
+li.mega__menu:hover ul.mega__menu-second {
+  top: 51px;
+  visibility: visible;
+  opacity: 1;
+}
